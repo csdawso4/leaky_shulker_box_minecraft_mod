@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "leaky-shulker-box:block/test_block"
+    }
+  }
+}
