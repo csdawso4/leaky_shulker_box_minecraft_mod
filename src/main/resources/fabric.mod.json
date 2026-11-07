@@ -18,6 +18,9 @@
 		"main": [
 			"com.craigtec.leakyshulkerbox.LeakyShulkerBox"
 		],
+		"client": [
+			"com.craigtec.leakyshulkerbox.LeakyShulkerBoxClient"
+		],
 		"fabric-datagen": [
 			"com.craigtec.leakyshulkerbox.LeakyShulkerBoxDataGenerator"
 		]

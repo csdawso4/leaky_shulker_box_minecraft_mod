@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "leaky-shulker-box:block/test_block"
-  }
-}

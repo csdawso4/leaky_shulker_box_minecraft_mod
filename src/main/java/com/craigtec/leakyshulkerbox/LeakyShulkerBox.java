@@ -2,7 +2,6 @@ package com.craigtec.leakyshulkerbox;
 
 import com.craigtec.leakyshulkerbox.block.ModBlocks;
 import com.craigtec.leakyshulkerbox.block.custom.entity.ModBlockEntities;
-import com.craigtec.leakyshulkerbox.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -26,7 +25,6 @@ public class LeakyShulkerBox implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModBlocks.registerModBlocks();
-		ModItems.registerModItems();
 		ModBlockEntities.registerBlockEntities();
 	}
 

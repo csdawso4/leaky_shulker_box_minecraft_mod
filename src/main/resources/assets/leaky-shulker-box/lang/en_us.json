@@ -1,4 +1,19 @@
 {
-  "item.leaky-shulker-box.hole": "Hole",
-  "block.leaky-shulker-box.test_block": "Test Block"
+  "block.leaky-shulker-box.leaky_shulker_box": "Leaky Shulker Box",
+  "block.leaky-shulker-box.white_leaky_shulker_box": "White Leaky Shulker Box",
+  "block.leaky-shulker-box.orange_leaky_shulker_box": "Orange Leaky Shulker Box",
+  "block.leaky-shulker-box.magenta_leaky_shulker_box": "Magenta Leaky Shulker Box",
+  "block.leaky-shulker-box.light_blue_leaky_shulker_box": "Light Blue Leaky Shulker Box",
+  "block.leaky-shulker-box.yellow_leaky_shulker_box": "Yellow Leaky Shulker Box",
+  "block.leaky-shulker-box.lime_leaky_shulker_box": "Lime Leaky Shulker Box",
+  "block.leaky-shulker-box.pink_leaky_shulker_box": "Pink Leaky Shulker Box",
+  "block.leaky-shulker-box.gray_leaky_shulker_box": "Gray Leaky Shulker Box",
+  "block.leaky-shulker-box.light_gray_leaky_shulker_box": "Light Gray Leaky Shulker Box",
+  "block.leaky-shulker-box.cyan_leaky_shulker_box": "Cyan Leaky Shulker Box",
+  "block.leaky-shulker-box.purple_leaky_shulker_box": "Purple Leaky Shulker Box",
+  "block.leaky-shulker-box.blue_leaky_shulker_box": "Blue Leaky Shulker Box",
+  "block.leaky-shulker-box.brown_leaky_shulker_box": "Brown Leaky Shulker Box",
+  "block.leaky-shulker-box.green_leaky_shulker_box": "Green Leaky Shulker Box",
+  "block.leaky-shulker-box.red_leaky_shulker_box": "Red Leaky Shulker Box",
+  "block.leaky-shulker-box.black_leaky_shulker_box": "Black Leaky Shulker Box"
 }
