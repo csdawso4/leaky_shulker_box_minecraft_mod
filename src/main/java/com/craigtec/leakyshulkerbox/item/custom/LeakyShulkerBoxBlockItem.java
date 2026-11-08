@@ -48,7 +48,7 @@ public class LeakyShulkerBoxBlockItem extends BlockItem {
         }
 
         // get the items in the container and randomly select one
-        List<ItemStack> itemStackList = container.allItemsCopyStream().toList();
+        List<ItemStack> itemStackList = container.itemCopies().toList();
         Integer indexOfRandomStack = getIndexOfRandomNonEmptyStack(itemStackList);
 
         if (indexOfRandomStack == -1) {

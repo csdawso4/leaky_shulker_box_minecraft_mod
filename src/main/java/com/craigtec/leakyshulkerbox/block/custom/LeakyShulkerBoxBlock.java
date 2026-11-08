@@ -2,8 +2,6 @@ package com.craigtec.leakyshulkerbox.block.custom;
 
 import com.craigtec.leakyshulkerbox.block.custom.entity.ModBlockEntities;
 import com.craigtec.leakyshulkerbox.block.custom.entity.custom.LeakyShulkerBoxBlockEntity;
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
@@ -42,18 +40,13 @@ import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 public class LeakyShulkerBoxBlock extends BaseEntityBlock {
-    public static final MapCodec<LeakyShulkerBoxBlock> CODEC = RecordCodecBuilder.mapCodec((i) -> i.group(DyeColor.CODEC.optionalFieldOf("color").forGetter((b) -> Optional.ofNullable(b.color)), propertiesCodec()).apply(i, (color, properties) -> new LeakyShulkerBoxBlock(color.orElse( null), properties)));
     public static final Map<Direction, VoxelShape> SHAPES_OPEN_SUPPORT = Shapes.rotateAll(Block.boxZ(16.0F, 0.0F, 1.0F));
     public static final EnumProperty<Direction> FACING;
     public static final Identifier CONTENTS;
     private final @Nullable DyeColor color;
 
-    public @NonNull MapCodec<LeakyShulkerBoxBlock> codec() {
-        return CODEC;
-    }
 
     public LeakyShulkerBoxBlock(final @Nullable DyeColor color, final BlockBehaviour.Properties properties) {
         super(properties);

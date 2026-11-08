@@ -97,7 +97,11 @@ public class LeakyShulkerBoxBlockEntityRenderer implements BlockEntityRenderer<L
             final int outlineColor
     ) {
         this.model.setupAnim(progress);
-        submitNodeCollector.submitModel(this.model, progress, poseStack, texture, lightCoords, overlayCoords, outlineColor, breakProgress);
+        submitNodeCollector.submitModel(this.model, progress, poseStack, texture, lightCoords, overlayCoords, outlineColor);
+        if (breakProgress != null) {
+            submitNodeCollector.order(1)
+                    .submitCrumblingOverlay(this.model, progress, poseStack, this.model.renderType(texture), lightCoords, overlayCoords, -1, breakProgress);
+        }
     }
 
     private static Transformation createModelTransform(final Direction direction) {

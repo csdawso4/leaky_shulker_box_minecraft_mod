@@ -1,4 +1,4 @@
-// 26.2	-999999999-01-01T00:00:00	Leaky Shulker Box/Tags for minecraft:block
+// 26.3	-999999999-01-01T00:00:00	Leaky Shulker Box/Tags for minecraft:block
 9fa177db47f1938bfe3d6951b3ef1cfbd5d9268c data/leaky-shulker-box/tags/block/leaky_shulker_boxes.json
 630cd745dacbfa4d76b98d867bf8ffcd792f590a data/minecraft/tags/block/guarded_by_piglins.json
 630cd745dacbfa4d76b98d867bf8ffcd792f590a data/minecraft/tags/block/mineable/pickaxe.json

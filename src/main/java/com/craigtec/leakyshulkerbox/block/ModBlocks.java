@@ -15,8 +15,10 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -26,17 +28,12 @@ import java.util.function.Function;
 import static com.craigtec.leakyshulkerbox.LeakyShulkerBox.id;
 
 public class ModBlocks {
-    private static final BlockBehaviour.StatePredicate NOT_CLOSED_LEAKY_SHULKER = (_, level, pos) -> {
-        BlockEntity patt0$temp = level.getBlockEntity(pos);
-        if (patt0$temp instanceof LeakyShulkerBoxBlockEntity leakyShulkerBoxBlockEntity) {
-            return leakyShulkerBoxBlockEntity.isClosed();
-        } else {
-            return true;
-        }
-    };
+    private static final BlockBehaviour.StatePredicate NOT_CLOSED_LEAKY_SHULKER = (state, level, pos) -> level.getBlockEntity(pos) instanceof ShulkerBoxBlockEntity shulkerBoxBlockEntity
+            ? shulkerBoxBlockEntity.isClosed()
+            : true;
 
     private static BlockBehaviour.Properties leakyShulkerBoxProperties(final MapColor mapColor) {
-        return BlockBehaviour.Properties.of().mapColor(mapColor).forceSolidOn().strength(2.0F).dynamicShape().noOcclusion().isSuffocating(NOT_CLOSED_LEAKY_SHULKER).isViewBlocking(NOT_CLOSED_LEAKY_SHULKER).pushReaction(PushReaction.DESTROY);
+        return BlockBehaviour.Properties.of().mapColor(mapColor).forceSolidOn().strength(2.0F).dynamicShape().noOcclusion().isSuffocating(NOT_CLOSED_LEAKY_SHULKER).pushReaction(PushReaction.POPPED);
     }
 
     public static final Block LEAKY_SHULKER_BOX = registerLeakyShulkerBox(
