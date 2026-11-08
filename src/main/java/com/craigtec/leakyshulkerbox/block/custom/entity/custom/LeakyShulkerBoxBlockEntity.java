@@ -124,7 +124,7 @@ public class LeakyShulkerBoxBlockEntity extends RandomizableContainerBlockEntity
     private void moveCollidedEntities(final Level level, final BlockPos pos, final BlockState state) {
         if (state.getBlock() instanceof LeakyShulkerBoxBlock) {
             Direction direction = state.getValue(LeakyShulkerBoxBlock.FACING);
-            AABB aabb = Shulker.getProgressDeltaAabb(1.0F, direction, this.progressOld, this.progress, pos.getBottomCenter());
+            AABB aabb = Shulker.getProgressDeltaAabb(1.0F, direction, this.progressOld, this.progress, Vec3.atBottomCenterOf(pos));
             List<Entity> entities = level.getEntities(null, aabb);
             if (!entities.isEmpty()) {
                 for(Entity entity : entities) {

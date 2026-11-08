@@ -141,6 +141,14 @@ public class ModBlocks {
             leakyShulkerBoxProperties(MapColor.COLOR_BLACK)
     );
 
+    public static ResourceKey<Block> getResourceKey(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
+    public static ResourceKey<Item> getResourceKey(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
     private static Block registerLeakyShulkerBox(String name, final Function<BlockBehaviour.Properties, Block> factory, final BlockBehaviour.Properties properties) {
         Block leakyShulkerBoxBlock = factory.apply(
                 properties.setId(

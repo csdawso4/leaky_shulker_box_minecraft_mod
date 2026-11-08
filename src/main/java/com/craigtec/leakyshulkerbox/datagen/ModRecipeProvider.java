@@ -27,39 +27,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 leakyShulkerBoxRecipe(Items.SHULKER_BOX, Item.byBlock(ModBlocks.LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.WHITE_SHULKER_BOX, Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.ORANGE_SHULKER_BOX, Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.MAGENTA_SHULKER_BOX, Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.LIGHT_BLUE_SHULKER_BOX, Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.YELLOW_SHULKER_BOX, Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.LIME_SHULKER_BOX, Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.PINK_SHULKER_BOX, Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.GRAY_SHULKER_BOX, Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.LIGHT_GRAY_SHULKER_BOX, Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.CYAN_SHULKER_BOX, Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.PURPLE_SHULKER_BOX, Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.BLUE_SHULKER_BOX, Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.BROWN_SHULKER_BOX, Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.GREEN_SHULKER_BOX, Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.RED_SHULKER_BOX, Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX));
-                leakyShulkerBoxRecipe(Items.BLACK_SHULKER_BOX, Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.white(), Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.orange(), Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.magenta(), Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.lightBlue(), Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.yellow(), Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.lime(), Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.pink(), Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.gray(), Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.lightGray(), Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.cyan(), Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.purple(), Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.blue(), Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.brown(), Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.green(), Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.red(), Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX));
+                leakyShulkerBoxRecipe(Items.DYED_SHULKER_BOX.black(), Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
 
-                dyedLeakyShulkerBoxRecipe(Items.WHITE_DYE, Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.ORANGE_DYE, Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.MAGENTA_DYE, Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.LIGHT_BLUE_DYE, Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.YELLOW_DYE, Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.LIME_DYE, Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.PINK_DYE, Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.GRAY_DYE, Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.LIGHT_GRAY_DYE, Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.CYAN_DYE, Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.PURPLE_DYE, Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.BLUE_DYE, Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.BROWN_DYE, Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.GREEN_DYE, Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.RED_DYE, Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX));
-                dyedLeakyShulkerBoxRecipe(Items.BLACK_DYE, Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.white(), Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.orange(), Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.magenta(), Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.lightBlue(), Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.yellow(), Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.lime(), Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.pink(), Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.gray(), Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.lightGray(), Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.cyan(), Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.purple(), Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.blue(), Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.brown(), Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.green(), Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.red(), Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX));
+                dyedLeakyShulkerBoxRecipe(Items.DYE.black(), Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
             }
 
             public void leakyShulkerBoxRecipe(final Item shulkerBox, final Item leakyShulkerBox) {

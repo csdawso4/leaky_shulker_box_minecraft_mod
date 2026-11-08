@@ -17,29 +17,29 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NonNull Provider registries) {
-        valueLookupBuilder(ModTags.Blocks.LEAKY_SHULKER_BOXES)
-                .add(ModBlocks.LEAKY_SHULKER_BOX)
-                .add(ModBlocks.WHITE_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.ORANGE_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.YELLOW_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.LIME_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.PINK_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.GRAY_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.CYAN_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.PURPLE_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.BLUE_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.BROWN_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.GREEN_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.RED_LEAKY_SHULKER_BOX)
-                .add(ModBlocks.BLACK_LEAKY_SHULKER_BOX);
+        tag(ModTags.Blocks.LEAKY_SHULKER_BOXES)
+                .add(ModBlocks.getResourceKey(ModBlocks.LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.WHITE_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.ORANGE_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.YELLOW_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.LIME_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.PINK_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.GRAY_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.CYAN_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.PURPLE_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.BLUE_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.BROWN_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.GREEN_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.RED_LEAKY_SHULKER_BOX))
+                .add(ModBlocks.getResourceKey(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
 
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(ModTags.Blocks.LEAKY_SHULKER_BOXES);
 
-        valueLookupBuilder(BlockTags.GUARDED_BY_PIGLINS)
+        tag(BlockTags.GUARDED_BY_PIGLINS)
                 .addTag(ModTags.Blocks.LEAKY_SHULKER_BOXES);
     }
 }

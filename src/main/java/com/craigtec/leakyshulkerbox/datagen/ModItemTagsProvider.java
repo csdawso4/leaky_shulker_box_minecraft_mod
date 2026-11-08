@@ -17,23 +17,23 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider{
 
     @Override
     protected void addTags(HolderLookup.@NonNull Provider registries) {
-        valueLookupBuilder(ModTags.Items.LEAKY_SHULKER_BOXES)
-                .add(Item.byBlock(ModBlocks.LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX))
-                .add(Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX));
+        tag(ModTags.Items.LEAKY_SHULKER_BOXES)
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.WHITE_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.ORANGE_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.MAGENTA_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.LIGHT_BLUE_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.YELLOW_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.LIME_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.PINK_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.GRAY_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.LIGHT_GRAY_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.CYAN_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.PURPLE_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.BLUE_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.BROWN_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.GREEN_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.RED_LEAKY_SHULKER_BOX)))
+                .add(ModBlocks.getResourceKey(Item.byBlock(ModBlocks.BLACK_LEAKY_SHULKER_BOX)));
     }
 }
